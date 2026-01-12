@@ -26,6 +26,9 @@ app.get('/', (req, res) => {
 connectDB(); 
 setupRoutes(app);
 
-app.listen(PORT,HOST, () => {
-  console.log(`Server is running on http://${HOST}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
+// app.listen(PORT,HOST, () => {
+//   console.log(`Server is running on http://${HOST}:${PORT}`);
+// });
